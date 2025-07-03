@@ -1,0 +1,254 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  z-index: 10000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+.brand-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f7931e;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #1a1a1a;
+  padding: 1rem;
+}
+
+.mobile-menu a {
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #333;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/sobre.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: brightness(0.7);
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 90%;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+}
+
+.quem-somos {
+  background-color: #232323;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.qs-card {
+  background-color: #1F1F1F;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  max-width: 850px;
+  width: 100%;
+  color: #ccc;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.qs-card h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.qs-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.mvv {
+  background-color: #232323;
+  padding: 6rem 2rem;
+  color: #ccc;
+}
+
+.mvv-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mvv-card {
+  background-color: #1F1F1F;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  flex: 1 1 320px;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.mvv-card:hover {
+  transform: translateY(-6px);
+}
+
+.mvv-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.mvv-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn-hero {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.95rem;
+  }
+  .qs-card h2 {
+    font-size: 2rem;
+  }
+
+  .qs-card p {
+    font-size: 1rem;
+  }
+  .mvv-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mvv-card {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A2 Incorporadora</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container">
+        <div class="logo-area">
+          <img src="assets/img/logo.png" alt="Logo A2" class="logo" />
+          <span class="brand-name">A2 INCORPORADORA</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="#empreendimentos">Empreendimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#sobre">Sobre</a>
+        <a href="#empreendimentos">Empreendimentos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <video autoplay muted loop >
+        <source src="assets/video/fundo2.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeos em HTML5.
+      </video>
+      <div class="hero-content">
+        <h1>
+          <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="carrossel-secao">
+      <div class="carrossel-wrapper">
+        <button class="nav prev" onclick="mudarSlide(-1)">❮</button>
+
+        <div class="carrossel">
+          <div class="card-carrossel ativo">
+            <div class="conteudo-card">
+              <h2>Residencial Horizon</h2>
+              <p>Alto padrão, vista privilegiada e localização nobre.</p>
+              <span>3 suítes • 2 vagas • 200m²</span>
+              <a href="#">Saiba mais</a>
+            </div>
+            <div class="imagem-card">
+              <img src="assets/img/casa1.jpg" alt="Residencial Horizon" />
+            </div>
+          </div>
+
+          <div class="card-carrossel">
+            <div class="conteudo-card">
+              <h2>Edifício Aquarela</h2>
+              <p>Design moderno com conforto e exclusividade.</p>
+              <span>4 suítes • 3 vagas • 250m²</span>
+              <a href="#">Saiba mais</a>
+            </div>
+            <div class="imagem-card">
+              <img src="assets/img/casa1.jpg" alt="Edifício Aquarela" />
+            </div>
+          </div>
+
+          <div class="card-carrossel">
+            <div class="conteudo-card">
+              <h2>Vista Bela</h2>
+              <p>Espaços amplos e acabamentos de alto padrão.</p>
+              <span>3 suítes • 2 vagas • 180m²</span>
+              <a href="#">Saiba mais</a>
+            </div>
+            <div class="imagem-card">
+              <img src="assets/img/casa1.jpg" alt="Vista Bela" />
+            </div>
+          </div>
+        </div>
+
+        <button class="nav next" onclick="mudarSlide(1)">❯</button>
+      </div>
+    </section>
+
+    <section class="pre-lancamentos">
+      <div class="container">
+        <h2 class="titulo-secao">Pré-Lançamentos</h2>
+
+        <div class="cards-pre">
+          <!-- Card 1 -->
+          <div class="card-pre">
+            <div class="imagem-pre">
+              <img src="assets/img/pre1.jpg" alt="Empreendimento 1" />
+            </div>
+            <div class="info-pre">
+              <h3>Alameda Jardins Residências do Golfe</h3>
+              <p>4 vagas | 3 e 4 suítes | 333 a 382m²</p>
+              <span class="categoria">Residencial</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-pre">
+            <div class="imagem-pre">
+              <img src="assets/img/pre2.jpg" alt="Empreendimento 2" />
+            </div>
+            <div class="info-pre">
+              <h3>Country Tower</h3>
+              <p>393 vagas + 10 condomínios | 75 a 1030m²</p>
+              <span class="categoria">Corporativo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrossel-lancamentos">
+      <div class="carrossel-wrapper">
+        <button class="nav prev" onclick="mudarSlideLanc(-1)">❮</button>
+
+        <div class="carrossel" id="lancamentos-carrossel">
+          <!-- Card 1 -->
+          <div class="card-lanc ativo">
+            <div class="imagem-lanc">
+              <img src="assets/img/lanc1.jpg" alt="Vista Bela">
+            </div>
+            <div class="info-lanc">
+              <h3>Vista Bela</h3>
+              <p>3 suítes • 2 vagas • 180m²</p>
+              <span class="categoria">Residencial</span>
+            </div>
+          </div>
+          
+
+          <!-- Card 2 -->
+          <div class="card-lanc">
+            <div class="imagem-lanc">
+              <img src="assets/img/lanc2.jpg" alt="Novo Horizonte" />
+            </div>
+            <div class="info-lanc">
+              <h3>Novo Horizonte</h3> <!-- Título aqui -->
+              <p>2 e 3 suítes • 2 vagas • 120 a 160m²</p>
+              <span class="categoria">Residencial</span>
+            </div>
+          </div>
+          
+
+      </div>
+      <button class="nav next" onclick="mudarSlideLanc(1)">❯</button>
+    </section>
+
+    <!-- <section class="essencia-a2">
+      <div class="essencia-container">
+        <div class="bloco" data-delay="0">
+          <h3>Missão</h3>
+          <p>
+            Construir com excelência, segurança e compromisso, criando
+            empreendimentos que valorizam a vida das pessoas.
+          </p>
+        </div>
+        <div class="bloco" data-delay="100">
+          <h3>Visão</h3>
+          <p>
+            Ser reconhecida como referência em empreendimentos de alto padrão no
+            sul do Brasil, com foco em inovação e qualidade.
+          </p>
+        </div>
+        <div class="bloco" data-delay="200">
+          <h3>Valores</h3>
+          <p>
+            Qualidade, ética, transparência, sustentabilidade e foco no cliente
+            em cada projeto entregue.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contato -->
+        <div class="footer-info">
+          <h4>Contato</h4>
+          <div class="footer-line">
+            <img src="https://cdn.simpleicons.org/gmail/ccc" alt="Email">
+            <a href="mailto:contato@a2construtora.com.br">contato@a2construtora.com.br</a>
+          </div>
+          <div class="footer-line">
+            <img src="https://cdn.simpleicons.org/whatsapp/ccc" alt="WhatsApp">
+            <a href="tel:+550000000000">(00) 00000-0000</a>
+          </div>
+        
+          <h4>Redes Sociais</h4>
+          <div class="footer-social">
+            <a href="#" target="_blank">
+              <img src="https://cdn.simpleicons.org/instagram/ccc" alt="Instagram">
+            </a>
+            <a href="#" target="_blank">
+              <img src="https://cdn.simpleicons.org/facebook/ccc" alt="Facebook">
+            </a>
+            <a href="#" target="_blank">
+              <img src="https://cdn.simpleicons.org/tiktok/ccc" alt="TikTok">
+            </a>
+          </div>
+        </div>
+        
+        <!-- Localização -->
+        <div class="footer-mapa">
+          <h4>Escritório</h4>
+          <p>Av. Exemplo, 123 – Bairro Nobre – Cidade/UF</p>
+          <div class="mapa-embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.096009081381!2d-51.16583222439644!3d-30.00539947494324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197717488b0a39%3A0xbe85d72b62ff4f4c!2sPisotech%20Revestimentos!5e0!3m2!1spt-BR!2sbr!4v1747856788914!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-copy">
+        <p>&copy; 2025 A2 Incorporadora. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
