@@ -1,0 +1,53 @@
+/* Hero */
+.det-hero{ position:relative; min-height:52vh; display:grid; place-items:center; overflow:hidden; }
+.det-hero__bg{ position:absolute; inset:0; background-size:cover; background-position:center; filter:brightness(.75); }
+.det-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,.45)); }
+.det-hero__content{ position:relative; text-align:center; color:#fff; padding:2rem 1rem; }
+.det-hero__content h1{ font:800 clamp(1.8rem,4vw,3rem) "Montserrat",sans-serif; letter-spacing:.2px; }
+.det-sub{ opacity:.9; margin-top:.25rem; }
+
+/* Wrapper */
+.det-wrapper{ max-width:1200px; margin: -60px auto 64px; padding: 0 16px; position:relative; z-index:1; }
+
+/* Resumo + chips */
+.det-resumo{ background:#1f1f1f; border:1px solid #2a2a2f; border-radius:12px; padding:20px; color:#cfcfd6; }
+.det-chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; list-style:none; padding:0; }
+.det-chips li{ background:#17181c; border:1px solid #2a2a2f; color:#ddd; padding:6px 10px; border-radius:999px; font-size:.92rem; }
+
+/* Galeria */
+.det-galeria{ margin-top:18px; }
+.det-galeria__grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:10px; }
+.det-galeria__grid img{ width:100%; height:240px; object-fit:cover; border-radius:10px; }
+
+/* Descrição */
+.det-descricao{ margin-top:22px; background:#1f1f1f; border:1px solid #2a2a2f; border-radius:12px; padding:20px; color:#cfcfd6; }
+.det-descricao h2{ color:#fff; margin-bottom:8px; font:800 1.2rem "Montserrat",sans-serif; }
+
+/* Plantas */
+.det-plantas{ margin-top:22px; }
+.det-plantas h2{ color:#fff; margin-bottom:10px; font:800 1.2rem "Montserrat",sans-serif; }
+.det-plantas__grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:12px; }
+.planta{ background:#1f1f1f; border:1px solid #2a2a2f; border-radius:10px; overflow:hidden; text-decoration:none; color:#e5e5ea; }
+.planta img{ width:100%; height:200px; object-fit:cover; display:block; }
+.planta span{ display:block; padding:10px 12px; }
+
+/* Mapa */
+.det-mapa{ margin-top:22px; }
+.det-mapa h2{ color:#fff; margin-bottom:6px; font:800 1.2rem "Montserrat",sans-serif; }
+.det-mapa__frame iframe{ width:100%; height:360px; border:0; border-radius:10px; }
+#detEndereco{ color:#cfcfd6; margin-bottom:8px; }
+
+/* CTA */
+.det-cta{ margin-top:22px; display:flex; gap:10px; flex-wrap:wrap; }
+.cta-btn{ background:#1a1b1f; border:1px solid #2a2a2f; color:#e5e5ea; padding:10px 14px; border-radius:10px; text-decoration:none; }
+.cta-btn:hover{ border-color:#F7931E; color:#F7931E; }
+
+/* Responsivo */
+@media (max-width:900px){
+  .det-galeria__grid{ grid-template-columns: 1fr 1fr; }
+  .det-plantas__grid{ grid-template-columns: 1fr 1fr; }
+  .det-wrapper{ margin-top: -40px; }
+}
+@media (max-width:600px){
+  .det-galeria__grid, .det-plantas__grid{ grid-template-columns: 1fr; }
+}

@@ -1,0 +1,59 @@
+[
+    {
+      "slug": "residencial-horizon",
+      "titulo": "Residencial Horizon",
+      "categoria": "Residencial",
+      "cidade": "Porto Alegre",
+      "resumo": "Alto padrão, vista privilegiada e localização nobre.",
+      "destaques": ["3 suítes", "2 vagas", "200 m²"],
+      "descricao": "A poucos minutos das principais vias, o Horizon reúne sofisticação, conforto e acabamentos de alto padrão, com plantas pensadas para a vida real.",
+      "galeria": [
+        "assets/img/casa1.jpg",
+        "assets/img/casa1.jpg",
+        "assets/img/casa1.jpg"
+      ],
+      "plantas": [
+        { "nome": "Planta Tipo A", "arquivo": "assets/img/horizon/plantas/tipo-a.jpg" }
+      ],
+      "localizacao": {
+        "endereco": "Rua Exemplo, 123 — Bairro Nobre — Porto Alegre/RS",
+        "maps": "https://www.google.com/maps?q=Rua%20Exemplo%20123%20Porto%20Alegre"
+      },
+      "cta": {
+        "telefone": "+55 51 99999-9999",
+        "email": "contato@a2construtora.com.br",
+        "whatsapp": "https://wa.me/5551999999999"
+      },
+      "seo": {
+        "title": "Residencial Horizon — A2 Incorporadora",
+        "description": "3 suítes, 2 vagas, 200 m² em localização nobre."
+      }
+    },
+    {
+      "slug": "country-tower",
+      "titulo": "Country Tower",
+      "categoria": "Corporativo",
+      "cidade": "Porto Alegre",
+      "resumo": "Torre corporativa com lajes amplas e vista panorâmica.",
+      "destaques": ["Lajes flexíveis", "Heliponto", "10 elevadores"],
+      "descricao": "Empreendimento corporativo premium com infraestrutura completa, pensado para empresas que buscam performance e imagem.",
+      "galeria": [
+        "assets/img/casa1.jpg",
+        "assets/img/casa1.jpg",
+        "assets/img/casa1.jpg"
+      ],
+      "localizacao": {
+        "endereco": "Av. Exemplo, 456 — Bairro Central — Porto Alegre/RS",
+        "maps": "https://www.google.com/maps?q=Av%20Exemplo%20456%20Porto%20Alegre"
+      },
+      "cta": {
+        "telefone": "+55 51 98888-8888",
+        "email": "comercial@a2construtora.com.br",
+        "whatsapp": "https://wa.me/5551988888888"
+      },
+      "seo": {
+        "title": "Country Tower — A2 Incorporadora",
+        "description": "Centro corporativo de alto padrão em Porto Alegre."
+      }
+    }
+  ]

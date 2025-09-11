@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A2 Incorporadora</title>
+    <title>A2 Incorporadora — Sobre</title>
     <link rel="stylesheet" href="css/sobre.css" />
     <link rel="icon" type="image/png" href="assets/img/logo.png" />
     <link
@@ -20,67 +20,158 @@
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="#empreendimentos">Empreendimentos</a>
-          <a href="#contato">Contato</a>
+          <a href="sobre.html" aria-current="page">Sobre</a>
+          <a href="empreendimentos.html">Empreendimentos</a>
+          <a href="index.html#contato">Contato</a>
         </nav>
-        <button class="hamburger" id="hamburger">&#9776;</button>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          &#9776;
+        </button>
       </div>
       <div class="mobile-menu" id="mobileMenu">
-        <a href="#sobre">Sobre</a>
-        <a href="#empreendimentos">Empreendimentos</a>
-        <a href="#contato">Contato</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="index.html#empreendimentos">Empreendimentos</a>
+        <a href="index.html#contato">Contato</a>
       </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" aria-label="Sobre a A2">
       <div class="hero-bg"></div>
       <div class="hero-content">
         <h1>Construindo com excelência<br />desde o primeiro traço.</h1>
       </div>
     </section>
 
-    <section class="quem-somos">
+    <section class="quem-somos" aria-labelledby="sobre-title">
       <div class="qs-card">
-        <h2>Quem Somos</h2>
+        <h2 id="sobre-title">Quem Somos</h2>
+
         <p>
           A A2 Incorporadora nasceu com o propósito de transformar espaços em
-          experiências. Somos uma empresa especializada em empreendimentos de
-          alto padrão, com foco em sofisticação, valorização imobiliária e
-          qualidade construtiva.
+          experiências. Somos especializados em empreendimentos de alto padrão,
+          com foco em sofisticação, valorização imobiliária e qualidade
+          construtiva.
         </p>
         <p>
-          Buscamos criar projetos exclusivos que unem arquitetura contemporânea,
+          Criamos projetos exclusivos que unem arquitetura contemporânea,
           localização estratégica e atenção aos mínimos detalhes — sempre
           pensando no bem-estar, na estética e na valorização de cada metro
           quadrado. Mais do que imóveis, entregamos legado.
         </p>
+
+        <div class="qs-mvv" role="list">
+          <article class="qs-mvv__item" role="listitem">
+            <h3>Missão</h3>
+            <p>
+              Entregar empreendimentos que unam sofisticação, funcionalidade e
+              respeito ao entorno.
+            </p>
+          </article>
+
+          <article class="qs-mvv__item" role="listitem">
+            <h3>Visão</h3>
+            <p>
+              Ser referência em alto padrão no sul do Brasil, reconhecida pela
+              excelência e inovação.
+            </p>
+          </article>
+
+          <article class="qs-mvv__item" role="listitem">
+            <h3>Valores</h3>
+            <p>
+              Qualidade, ética, transparência, sustentabilidade e foco no
+              cliente em cada decisão.
+            </p>
+            <ul>
+              <li>
+                <strong>Compromisso com o cliente:</strong> Superar expectativas
+                em cada projeto.
+              </li>
+              <li>
+                <strong>Inovação constante:</strong> Buscar sempre as melhores
+                soluções e tecnologias.
+              </li>
+              <li>
+                <strong>Integridade:</strong> Agir com honestidade e respeito em
+                todas as relações.
+              </li>
+              <li>
+                <strong>Sustentabilidade:</strong> Projetos conscientes para um
+                futuro melhor.
+              </li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="mvv">
-      <div class="mvv-container">
-        <div class="mvv-card">
-          <h3>Missão</h3>
-          <p>
-            Entregar empreendimentos únicos que unam sofisticação, funcionalidade e localização estratégica, valorizando cada detalhe da experiência de morar bem.
-          </p>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Contato -->
+        <div class="footer-info">
+          <h4>Contato</h4>
+          <div class="footer-line">
+            <img src="https://cdn.simpleicons.org/gmail/ccc" alt="Email" />
+            <a href="mailto:contato@a2construtora.com.br"
+              >contato@a2construtora.com.br</a
+            >
+          </div>
+          <div class="footer-line">
+            <img
+              src="https://cdn.simpleicons.org/whatsapp/ccc"
+              alt="WhatsApp"
+            />
+            <a href="tel:+550000000000">(00) 00000-0000</a>
+          </div>
+
+          <h4>Redes Sociais</h4>
+          <div class="footer-social">
+            <a href="#" target="_blank">
+              <img
+                src="https://cdn.simpleicons.org/instagram/ccc"
+                alt="Instagram"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img
+                src="https://cdn.simpleicons.org/facebook/ccc"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img src="https://cdn.simpleicons.org/tiktok/ccc" alt="TikTok" />
+            </a>
+          </div>
         </div>
-        <div class="mvv-card">
-          <h3>Visão</h3>
-          <p>
-            Ser referência em incorporação de alto padrão, reconhecida pela excelência arquitetônica, qualidade construtiva e inovação em cada projeto.
-          </p>
-        </div>
-        <div class="mvv-card">
-          <h3>Valores</h3>
-          <p>
-            Comprometimento, integridade, inovação, estética e valorização humana em cada etapa do processo construtivo.
-          </p>
+
+        <!-- Localização -->
+        <div class="footer-mapa">
+          <h4>Escritório</h4>
+          <p>Av. Exemplo, 123 – Bairro Nobre – Cidade/UF</p>
+          <div class="mapa-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.096009081381!2d-51.16583222439644!3d-30.00539947494324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197717488b0a39%3A0xbe85d72b62ff4f4c!2sPisotech%20Revestimentos!5e0!3m2!1spt-BR!2sbr!4v1747856788914!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </section>
-    
+
+      <div class="footer-copy">
+        <p>&copy; 2025 A2 Incorporadora. Todos os direitos reservados.</p>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>

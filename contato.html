@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A2 Incorporadora — Contato</title>
+
+  <!-- CSS base (navbar + footer) -->
+  <link rel="stylesheet" href="css/sobre.css" />
+  <!-- CSS da página de contato -->
+  <link rel="stylesheet" href="css/contato.css" />
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo-area">
+        <img src="assets/img/logo.png" alt="Logo A2" class="logo" />
+        <span class="brand-name">A2 INCORPORADORA</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="empreendimentos.html">Empreendimentos</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menu">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="sobre.html">Sobre</a>
+      <a href="empreendimentos.html">Empreendimentos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="contato-page">
+    <section class="contato-container">
+      <h1>Entre em Contato</h1>
+      <p>Preencha o formulário abaixo e retornaremos o mais breve possível.</p>
+
+      <form class="contato-form" action="#" method="post">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Contato</h4>
+        <div class="footer-line">
+          <img src="https://cdn.simpleicons.org/gmail/ccc" alt="Email">
+          <a href="mailto:contato@a2construtora.com.br">contato@a2construtora.com.br</a>
+        </div>
+        <div class="footer-line">
+          <img src="https://cdn.simpleicons.org/whatsapp/ccc" alt="WhatsApp">
+          <a href="tel:+550000000000">(00) 00000-0000</a>
+        </div>
+        <h4>Redes Sociais</h4>
+        <div class="footer-social">
+          <a href="#"><img src="https://cdn.simpleicons.org/instagram/ccc" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn.simpleicons.org/facebook/ccc" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn.simpleicons.org/tiktok/ccc" alt="TikTok"></a>
+        </div>
+      </div>
+      <div class="footer-mapa">
+        <h4>Escritório</h4>
+        <p>Av. Exemplo, 123 – Bairro Nobre – Cidade/UF</p>
+        <div class="mapa-embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2025 A2 Incorporadora. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

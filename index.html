@@ -20,108 +20,134 @@
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="#empreendimentos">Empreendimentos</a>
-          <a href="#contato">Contato</a>
+          <a href="sobre.html" aria-current="page">Sobre</a>
+          <a href="empreendimentos.html">Empreendimentos</a>
+          <a href="contato.html">Contato</a>
         </nav>
-        <button class="hamburger" id="hamburger">&#9776;</button>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          &#9776;
+        </button>
       </div>
       <div class="mobile-menu" id="mobileMenu">
-        <a href="#sobre">Sobre</a>
-        <a href="#empreendimentos">Empreendimentos</a>
-        <a href="#contato">Contato</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="index.html#empreendimentos">Empreendimentos</a>
+        <a href="index.html#contato">Contato</a>
       </div>
     </header>
 
-    <section class="hero">
-      <video autoplay muted loop >
-        <source src="assets/video/fundo2.mp4" type="video/mp4" />
-        Seu navegador não suporta vídeos em HTML5.
-      </video>
-      <div class="hero-content">
-        <h1>
-          <span class="typed-text"></span><span class="cursor">&nbsp;</span>
-        </h1>
-      </div>
-    </section>
+    <!-- HERO (apenas imagem de fundo) -->
+<section class="hero" id="hero" aria-label="Destaque A2">
+  <div class="hero-media">
+    <picture>
+      <!-- mobile primeiro -->
+      <source media="(max-width: 767px)" srcset="assets/img/hero-bgtres.png" />
+      <!-- desktop padrão -->
+      <img
+        src="assets/img/hero-bgtres.png"
+        alt=""
+        width="1920"
+        height="1080"
+        loading="eager"
+        decoding="async"
+      />
+    </picture>
+  </div>
 
-    <section class="carrossel-secao">
-      <div class="carrossel-wrapper">
-        <button class="nav prev" onclick="mudarSlide(-1)">❮</button>
+  <!-- (opcional) se quiser manter um título fixo depois, descomente:
+  <div class="hero-content">
+    <h1>Construções de alto padrão</h1>
+  </div>
+  -->
+</section>
 
-        <div class="carrossel">
-          <div class="card-carrossel ativo">
-            <div class="conteudo-card">
-              <h2>Residencial Horizon</h2>
-              <p>Alto padrão, vista privilegiada e localização nobre.</p>
-              <span>3 suítes • 2 vagas • 200m²</span>
-              <a href="#">Saiba mais</a>
-            </div>
-            <div class="imagem-card">
-              <img src="assets/img/casa1.jpg" alt="Residencial Horizon" />
-            </div>
-          </div>
+<section class="carrossel-secao">
+  <div class="carrossel-wrapper">
+    <button class="nav prev" onclick="mudarSlide(-1)" aria-label="Slide anterior">❮</button>
 
-          <div class="card-carrossel">
-            <div class="conteudo-card">
-              <h2>Edifício Aquarela</h2>
-              <p>Design moderno com conforto e exclusividade.</p>
-              <span>4 suítes • 3 vagas • 250m²</span>
-              <a href="#">Saiba mais</a>
-            </div>
-            <div class="imagem-card">
-              <img src="assets/img/casa1.jpg" alt="Edifício Aquarela" />
-            </div>
-          </div>
-
-          <div class="card-carrossel">
-            <div class="conteudo-card">
-              <h2>Vista Bela</h2>
-              <p>Espaços amplos e acabamentos de alto padrão.</p>
-              <span>3 suítes • 2 vagas • 180m²</span>
-              <a href="#">Saiba mais</a>
-            </div>
-            <div class="imagem-card">
-              <img src="assets/img/casa1.jpg" alt="Vista Bela" />
-            </div>
-          </div>
+    <div class="carrossel">
+      <div class="card-carrossel ativo">
+        <div class="conteudo-card">
+          <h2>Residencial Horizon</h2>
+          <p>Alto padrão, vista privilegiada e localização nobre.</p>
+          <span>3 suítes • 2 vagas • 200m²</span>
+          <a href="#">Saiba mais</a>
         </div>
-
-        <button class="nav next" onclick="mudarSlide(1)">❯</button>
-      </div>
-    </section>
-
-    <section class="pre-lancamentos">
-      <div class="container">
-        <h2 class="titulo-secao">Pré-Lançamentos</h2>
-
-        <div class="cards-pre">
-          <!-- Card 1 -->
-          <div class="card-pre">
-            <div class="imagem-pre">
-              <img src="assets/img/pre1.jpg" alt="Empreendimento 1" />
-            </div>
-            <div class="info-pre">
-              <h3>Alameda Jardins Residências do Golfe</h3>
-              <p>4 vagas | 3 e 4 suítes | 333 a 382m²</p>
-              <span class="categoria">Residencial</span>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="card-pre">
-            <div class="imagem-pre">
-              <img src="assets/img/pre2.jpg" alt="Empreendimento 2" />
-            </div>
-            <div class="info-pre">
-              <h3>Country Tower</h3>
-              <p>393 vagas + 10 condomínios | 75 a 1030m²</p>
-              <span class="categoria">Corporativo</span>
-            </div>
-          </div>
+        <div class="imagem-card">
+          <img src="assets/img/casa1.jpg" alt="Residencial Horizon" width="1200" height="800" loading="lazy" decoding="async" />
         </div>
       </div>
-    </section>
+
+      <div class="card-carrossel">
+        <div class="conteudo-card">
+          <h2>Edifício Aquarela</h2>
+          <p>Design moderno com conforto e exclusividade.</p>
+          <span>4 suítes • 3 vagas • 250m²</span>
+          <a href="#">Saiba mais</a>
+        </div>
+        <div class="imagem-card">
+          <img src="assets/img/casa1.jpg" alt="Edifício Aquarela" width="1200" height="800" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <div class="card-carrossel">
+        <div class="conteudo-card">
+          <h2>Vista Bela</h2>
+          <p>Espaços amplos e acabamentos de alto padrão.</p>
+          <span>3 suítes • 2 vagas • 180m²</span>
+          <a href="#">Saiba mais</a>
+        </div>
+        <div class="imagem-card">
+          <img src="assets/img/casa1.jpg" alt="Vista Bela" width="1200" height="800" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+
+    <!-- bolinhas de paginação -->
+    <div class="paginacao" id="paginacao-destaques" aria-label="Navegação de slides"></div>
+
+    <button class="nav next" onclick="mudarSlide(1)" aria-label="Próximo slide">❯</button>
+  </div>
+</section>
+
+<section class="pre-lancamentos" aria-labelledby="pre-title">
+  <div class="container">
+    <h2 class="titulo-secao" id="pre-title">Pré-Lançamentos</h2>
+
+    <div class="cards-pre" role="list">
+      <!-- Card 1 -->
+      <div class="card-pre" role="listitem">
+        <div class="imagem-pre">
+          <img src="assets/img/pre1.jpg" alt="Fachada do Alameda Jardins"
+               width="1200" height="900" loading="lazy" decoding="async" />
+        </div>
+        <div class="info-pre">
+          <h3>Alameda Jardins Residências do Golfe</h3>
+          <p>4 vagas • 3 e 4 suítes • 333 a 382 m²</p>
+          <span class="categoria">Residencial</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-pre" role="listitem">
+        <div class="imagem-pre">
+          <img src="assets/img/pre2.jpg" alt="Fachada do Country Tower"
+               width="1200" height="900" loading="lazy" decoding="async" />
+        </div>
+        <div class="info-pre">
+          <h3>Country Tower</h3>
+          <p>Salas 75 a 103 m² • Bela Vista</p>
+          <span class="categoria">Corporativo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="carrossel-lancamentos">
       <div class="carrossel-wrapper">
