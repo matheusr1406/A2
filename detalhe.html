@@ -39,49 +39,45 @@
   <section class="det-hero" aria-label="Destaque do Empreendimento">
     <div id="heroBg" class="det-hero__bg"></div>
     <div class="det-hero__content">
-      <h1 id="detTitulo">Empreendimento</h1>
-      <div class="det-sub" id="detCidade"></div>
+      <h1 data-det="titulo">Empreendimento</h1>
+      <div class="det-sub" data-det="cidade"></div>
     </div>
   </section>
 
   <main class="det-wrapper">
-    <!-- Resumo + chips -->
+    <div id="detalheErro"></div>
+    
     <section class="det-resumo">
-      <p id="detResumo"></p>
-      <ul class="det-chips" id="detDestaques"></ul>
+      <p data-det="resumo"></p>
+      <ul class="det-chips" data-det="destaques"></ul>
     </section>
 
-    <!-- Galeria -->
     <section class="det-galeria">
-      <div class="det-galeria__grid" id="detGaleria"></div>
+      <div class="det-galeria__grid" data-det="galeria"></div>
     </section>
 
-    <!-- Descrição -->
     <section class="det-descricao">
       <h2>Sobre o empreendimento</h2>
-      <p id="detDescricao"></p>
+      <p data-det="descricao"></p>
     </section>
 
-    <!-- Plantas -->
     <section class="det-plantas" id="detPlantasSec" hidden>
       <h2>Plantas</h2>
-      <div class="det-plantas__grid" id="detPlantas"></div>
+      <div class="det-plantas__grid" data-det="plantas"></div>
     </section>
 
-    <!-- Localização / Mapa -->
     <section class="det-mapa" id="detMapaSec" hidden>
       <h2>Localização</h2>
-      <p id="detEndereco"></p>
+      <p data-det="endereco"></p>
       <div class="det-mapa__frame">
-        <iframe id="detMaps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <iframe data-det="maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
     </section>
 
-    <!-- CTAs -->
     <section class="det-cta">
-      <a id="ctaWhats" class="cta-btn" target="_blank" rel="noopener">WhatsApp</a>
-      <a id="ctaTel" class="cta-btn">Ligar</a>
-      <a id="ctaEmail" class="cta-btn">E-mail</a>
+      <a data-det="wa" class="cta-btn" target="_blank" rel="noopener">WhatsApp</a>
+      <a data-det="tel" class="cta-btn">Ligar</a>
+      <a data-det="mail" class="cta-btn">E-mail</a>
     </section>
   </main>
 
