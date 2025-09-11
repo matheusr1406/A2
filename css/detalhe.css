@@ -45,12 +45,12 @@
   padding: 0 16px;
   position: relative;
   z-index: 1;
-  display: flex;
+  display: flex; /* Para controlar o espaçamento entre os blocos principais */
   flex-direction: column;
-  gap: 24px; /* Espaçamento padrão entre todos os blocos */
+  gap: 24px; /* Espaçamento entre as seções (resumo, galeria, card unificado, cta) */
 }
 
-/* --- Bloco de Resumo (card inicial) --- */
+/* --- Bloco de Resumo (card individual) --- */
 .det-resumo {
   background: #1f1f1f;
   border: 1px solid #2a2a2f;
@@ -75,46 +75,58 @@
   font-size: .92rem;
 }
 
-/* --- Galeria --- */
+/* --- Galeria (fotos como antes) --- */
+.det-galeria {
+  margin-top: 0; /* O espaçamento já vem do det-wrapper gap */
+}
 .det-galeria__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Mais flexível */
   gap: 12px;
 }
 .galeria__item img {
   width: 100%;
-  height: 240px;
-  object-fit: cover;
+  height: 240px; /* Altura fixa para as miniaturas */
+  object-fit: cover; /* Garante que a imagem preencha sem distorcer */
   border-radius: 10px;
-  cursor: pointer;
+  cursor: pointer; /* Indica que é clicável */
   transition: opacity 0.2s ease;
 }
 .galeria__item img:hover {
   opacity: 0.85;
 }
 
-/* --- CARD UNIFICADO PARA CONTEÚDO --- */
-.det-conteudo-card {
+
+/* --- CARD UNIFICADO (Sobre, Plantas, Localização) --- */
+.det-conteudo-unificado-card {
   background: #1f1f1f;
   border: 1px solid #2a2a2f;
   border-radius: 12px;
-  padding: 24px;
+  padding: 24px; /* Padding geral para o card */
   color: #cfcfd6;
+  
   display: flex;
   flex-direction: column;
-  gap: 28px; /* Espaço entre as seções dentro do card */
+  gap: 28px; /* Espaçamento entre as sub-seções (descricao, plantas, mapa) */
 }
 
 /* Estilo para títulos dentro do card unificado */
-.det-conteudo-card h2 {
+.det-conteudo-unificado-card h2 {
   color: #fff;
   margin-bottom: 8px;
   font: 800 1.3rem "Montserrat", sans-serif;
   padding-bottom: 8px;
-  border-bottom: 1px solid #2a2a2f;
+  border-bottom: 1px solid #2a2a2f; /* Linha abaixo do título */
 }
 
-/* --- Seção Plantas (dentro do card) --- */
+/* --- Sub-seções dentro do card unificado --- */
+/* (Reset de margens superiores para que o gap do pai funcione) */
+.det-descricao, .det-plantas, .det-mapa {
+  margin-top: 0; 
+  padding: 0; /* Remove padding extra que possa ter de antes */
+}
+
+/* Plantas */
 .det-plantas__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -127,25 +139,28 @@
   overflow: hidden;
   text-decoration: none;
   color: #e5e5ea;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: block; /* Garante que o link ocupe todo o espaço */
 }
 .planta:hover {
   transform: translateY(-3px);
-  border-color: #4a4a4f;
+  border-color: #F7931E; /* Cor da borda ao passar o mouse */
 }
 .planta img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
+  border-bottom: 1px solid #3a3a3f; /* Linha separando imagem do texto */
 }
 .planta span {
   display: block;
   padding: 12px 14px;
   font-weight: 600;
+  text-align: center; /* Centraliza o nome da planta */
 }
 
-/* --- Seção Mapa (dentro do card) --- */
+/* Localização / Mapa */
 #detEndereco {
   color: #cfcfd6;
   margin-bottom: 12px;
@@ -162,6 +177,7 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin-top: 0; /* Espaçamento já vem do det-wrapper gap */
 }
 .cta-btn {
   background: #1a1b1f;
@@ -172,6 +188,9 @@
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease;
+  display: inline-flex; /* Para alinhar ícones se existirem */
+  align-items: center;
+  justify-content: center;
 }
 .cta-btn:hover {
   border-color: #F7931E;
@@ -208,18 +227,22 @@
 .lightbox-prev { top: 50%; left: -50px; transform: translateY(-50%); }
 .lightbox-next { top: 50%; right: -50px; transform: translateY(-50%); }
 
-
 /* ================================== */
 /* RESPONSIVIDADE                     */
 /* ================================== */
 @media (max-width: 900px) {
-  .det-wrapper { margin-top: -40px; }
+  .det-wrapper { margin-top: -40px; gap: 20px; }
+  .det-conteudo-unificado-card h2 { font-size: 1.2rem; }
+  .galeria__item img, .planta img { height: 200px; } /* Ajuste de altura para telas menores */
+  .det-plantas__grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 }
 @media (max-width: 600px) {
   .det-wrapper { gap: 16px; }
-  .det-resumo, .det-conteudo-card { padding: 16px; }
-  .det-conteudo-card h2 { font-size: 1.1rem; }
-  .det-plantas__grid { grid-template-columns: 1fr; }
-  .lightbox-prev { left: -10px; }
-  .lightbox-next { right: -10px; }
+  .det-resumo, .det-conteudo-unificado-card { padding: 16px; }
+  .det-conteudo-unificado-card h2 { font-size: 1.1rem; margin-bottom: 6px; padding-bottom: 6px; }
+  .det-galeria__grid, .det-plantas__grid { grid-template-columns: 1fr; }
+  .planta img { height: 180px; }
+  .lightbox-prev { left: -5px; font-size: 2.5rem; }
+  .lightbox-next { right: -5px; font-size: 2.5rem; }
+  .lightbox-close { font-size: 2rem; top: 0; right: 0; }
 }
