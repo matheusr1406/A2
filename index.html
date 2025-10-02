@@ -31,7 +31,7 @@
           aria-expanded="false"
           aria-label="Abrir menu"
         >
-          &#9776;
+          ☰
         </button>
       </div>
       <div class="mobile-menu" id="mobileMenu">
@@ -42,120 +42,87 @@
       </div>
     </header>
 
-    <!-- HERO (apenas imagem de fundo) -->
-<section class="hero" id="hero" aria-label="Destaque A2">
-  <div class="hero-media">
-    <picture>
-      <!-- mobile primeiro -->
-      <source media="(max-width: 767px)" srcset="assets/img/hero-bgtres.png" />
-      <!-- desktop padrão -->
-      <img
-        src="assets/img/hero-bgtres.png"
-        alt=""
-        width="1920"
-        height="1080"
-        loading="eager"
-        decoding="async"
-      />
-    </picture>
-  </div>
-
-  <!-- (opcional) se quiser manter um título fixo depois, descomente:
-  <div class="hero-content">
-    <h1>Construções de alto padrão</h1>
-  </div>
-  -->
-</section>
-
-<section class="carrossel-secao">
-  <div class="carrossel-wrapper">
-    <button class="nav prev" onclick="mudarSlide(-1)" aria-label="Slide anterior">❮</button>
-
-    <div class="carrossel">
-      <div class="card-carrossel ativo">
-        <div class="conteudo-card">
-          <h2>Residencial Horizon</h2>
-          <p>Alto padrão, vista privilegiada e localização nobre.</p>
-          <span>3 suítes • 2 vagas • 200m²</span>
-          <a href="#">Saiba mais</a>
+    <section class="hero" id="hero" aria-label="Destaque A2">
+        <div class="hero-media">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/img/BANNER A2.png" />
+            <img
+              src="assets/img/BANNER A2.png"
+              alt=""
+              width="1920"
+              height="1080"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
         </div>
-        <div class="imagem-card">
-          <img src="assets/img/casa1.jpg" alt="Residencial Horizon" width="1200" height="800" loading="lazy" decoding="async" />
+    </section>
+
+    <section class="carrossel-secao">
+      <div class="carrossel-wrapper animate-on-scroll">
+        <button class="nav prev" onclick="mudarSlide(-1)" aria-label="Slide anterior">❮</button>
+        <div class="carrossel">
+          <div class="card-carrossel ativo">
+            <div class="conteudo-card">
+              <h2>Residencial Horizon</h2>
+              <p>Alto padrão, vista privilegiada e localização nobre.</p>
+              <span>3 suítes • 2 vagas • 200m²</span>
+              <a href="#">Saiba mais</a>
+            </div>
+            <div class="imagem-card">
+              <img src="assets/img/casa1.jpg" alt="Residencial Horizon" width="1200" height="800" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="card-carrossel">
+            <div class="conteudo-card">
+              <h2>Edifício Aquarela</h2>
+              <p>Design moderno com conforto e exclusividade.</p>
+              <span>4 suítes • 3 vagas • 250m²</span>
+              <a href="#">Saiba mais</a>
+            </div>
+            <div class="imagem-card">
+              <img src="assets/img/casa1.jpg" alt="Edifício Aquarela" width="1200" height="800" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="card-carrossel">
+            <div class="conteudo-card">
+              <h2>Vista Bela</h2>
+              <p>Espaços amplos e acabamentos de alto padrão.</p>
+              <span>3 suítes • 2 vagas • 180m²</span>
+              <a href="#">Saiba mais</a>
+            </div>
+            <div class="imagem-card">
+              <img src="assets/img/casa1.jpg" alt="Vista Bela" width="1200" height="800" loading="lazy" decoding="async" />
+            </div>
+          </div>
         </div>
+        <div class="paginacao" id="paginacao-destaques" aria-label="Navegação de slides"></div>
+        <button class="nav next" onclick="mudarSlide(1)" aria-label="Próximo slide">❯</button>
       </div>
+    </section>
 
-      <div class="card-carrossel">
-        <div class="conteudo-card">
-          <h2>Edifício Aquarela</h2>
-          <p>Design moderno com conforto e exclusividade.</p>
-          <span>4 suítes • 3 vagas • 250m²</span>
-          <a href="#">Saiba mais</a>
+    <section id="video-section">
+      <div class="video-wrapper" class="animate-on-scroll">
+        <div class="video-container">
+          <video 
+            id="video-player" 
+            width="1920" 
+            height="1080" 
+            autoplay 
+            muted 
+            playsinline
+            src="assets/video/video1.mp4" 
+          ></video>
         </div>
-        <div class="imagem-card">
-          <img src="assets/img/casa1.jpg" alt="Edifício Aquarela" width="1200" height="800" loading="lazy" decoding="async" />
-        </div>
+        <div id="video-info">
+          </div>
       </div>
-
-      <div class="card-carrossel">
-        <div class="conteudo-card">
-          <h2>Vista Bela</h2>
-          <p>Espaços amplos e acabamentos de alto padrão.</p>
-          <span>3 suítes • 2 vagas • 180m²</span>
-          <a href="#">Saiba mais</a>
-        </div>
-        <div class="imagem-card">
-          <img src="assets/img/casa1.jpg" alt="Vista Bela" width="1200" height="800" loading="lazy" decoding="async" />
-        </div>
-      </div>
-    </div>
-
-    <!-- bolinhas de paginação -->
-    <div class="paginacao" id="paginacao-destaques" aria-label="Navegação de slides"></div>
-
-    <button class="nav next" onclick="mudarSlide(1)" aria-label="Próximo slide">❯</button>
-  </div>
-</section>
-
-<section class="pre-lancamentos" aria-labelledby="pre-title">
-  <div class="container">
-    <h2 class="titulo-secao" id="pre-title">Pré-Lançamentos</h2>
-
-    <div class="cards-pre" role="list">
-      <!-- Card 1 -->
-      <div class="card-pre" role="listitem">
-        <div class="imagem-pre">
-          <img src="assets/img/pre1.jpg" alt="Fachada do Alameda Jardins"
-               width="1200" height="900" loading="lazy" decoding="async" />
-        </div>
-        <div class="info-pre">
-          <h3>Alameda Jardins Residências do Golfe</h3>
-          <p>4 vagas • 3 e 4 suítes • 333 a 382 m²</p>
-          <span class="categoria">Residencial</span>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="card-pre" role="listitem">
-        <div class="imagem-pre">
-          <img src="assets/img/pre2.jpg" alt="Fachada do Country Tower"
-               width="1200" height="900" loading="lazy" decoding="async" />
-        </div>
-        <div class="info-pre">
-          <h3>Country Tower</h3>
-          <p>Salas 75 a 103 m² • Bela Vista</p>
-          <span class="categoria">Corporativo</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section class="carrossel-lancamentos">
-      <div class="carrossel-wrapper">
+      <div class="carrossel-wrapper animate-on-scroll">
         <button class="nav prev" onclick="mudarSlideLanc(-1)">❮</button>
-
         <div class="carrossel" id="lancamentos-carrossel">
-          <!-- Card 1 -->
           <div class="card-lanc ativo">
             <div class="imagem-lanc">
               <img src="assets/img/lanc1.jpg" alt="Vista Bela">
@@ -166,81 +133,37 @@
               <span class="categoria">Residencial</span>
             </div>
           </div>
-          
-
-          <!-- Card 2 -->
           <div class="card-lanc">
             <div class="imagem-lanc">
               <img src="assets/img/lanc2.jpg" alt="Novo Horizonte" />
             </div>
             <div class="info-lanc">
-              <h3>Novo Horizonte</h3> <!-- Título aqui -->
+              <h3>Novo Horizonte</h3>
               <p>2 e 3 suítes • 2 vagas • 120 a 160m²</p>
               <span class="categoria">Residencial</span>
             </div>
           </div>
-          
-
+        </div>
+        <button class="nav next" onclick="mudarSlideLanc(1)">❯</button>
       </div>
-      <button class="nav next" onclick="mudarSlideLanc(1)">❯</button>
     </section>
-
-    <!-- <section class="essencia-a2">
-      <div class="essencia-container">
-        <div class="bloco" data-delay="0">
-          <h3>Missão</h3>
-          <p>
-            Construir com excelência, segurança e compromisso, criando
-            empreendimentos que valorizam a vida das pessoas.
-          </p>
-        </div>
-        <div class="bloco" data-delay="100">
-          <h3>Visão</h3>
-          <p>
-            Ser reconhecida como referência em empreendimentos de alto padrão no
-            sul do Brasil, com foco em inovação e qualidade.
-          </p>
-        </div>
-        <div class="bloco" data-delay="200">
-          <h3>Valores</h3>
-          <p>
-            Qualidade, ética, transparência, sustentabilidade e foco no cliente
-            em cada projeto entregue.
-          </p>
-        </div>
-      </div>
-    </section> -->
 
     <footer class="footer">
       <div class="footer-container">
-        <!-- Contato -->
-        <div class="footer-info">
+        <div class="footer-info animate-on-scroll">
           <h4>Contato</h4>
           <div class="footer-line">
             <img src="https://cdn.simpleicons.org/gmail/ccc" alt="Email">
             <a href="mailto:contato@a2construtora.com.br">contato@a2construtora.com.br</a>
           </div>
-          <div class="footer-line">
-            <img src="https://cdn.simpleicons.org/whatsapp/ccc" alt="WhatsApp">
-            <a href="tel:+550000000000">(00) 00000-0000</a>
-          </div>
-        
           <h4>Redes Sociais</h4>
-          <div class="footer-social">
+          <div class="footer-social animate-on-scroll">
             <a href="#" target="_blank">
               <img src="https://cdn.simpleicons.org/instagram/ccc" alt="Instagram">
             </a>
-            <a href="#" target="_blank">
-              <img src="https://cdn.simpleicons.org/facebook/ccc" alt="Facebook">
-            </a>
-            <a href="#" target="_blank">
-              <img src="https://cdn.simpleicons.org/tiktok/ccc" alt="TikTok">
-            </a>
           </div>
         </div>
-        
-        <!-- Localização -->
-        <div class="footer-mapa">
+        <div class="footer-mapa animate-on-scroll">
           <h4>Escritório</h4>
           <p>Av. Exemplo, 123 – Bairro Nobre – Cidade/UF</p>
           <div class="mapa-embed">
@@ -248,13 +171,11 @@
           </div>
         </div>
       </div>
-    
       <div class="footer-copy">
-        <p>&copy; 2025 A2 Incorporadora. Todos os direitos reservados.</p>
+        <p>© 2025 A2 Incorporadora. Todos os direitos reservados.</p>
       </div>
     </footer>
     
-
     <script src="js/script.js"></script>
   </body>
 </html>

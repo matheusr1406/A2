@@ -11,6 +11,94 @@ body {
   color: #333;
 }
 
+/* ===== Animação de Scroll Fade-in ===== */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px); /* Aumentamos a distância inicial */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Aumentamos a duração */
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Seção de Vídeo (Design Refinado) ===== */
+
+#video-section {
+  background-color: #1a1a1a; /* COR ALTERADA - Igual à navbar */
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-secao-video {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: #f7931e; /* COR ALTERADA - Destaque com a cor da marca */
+  margin-bottom: 2.5rem;
+  text-align: center;
+  opacity: 1; /* Opacidade máxima para a cor se destacar */
+  font-weight: 700;
+  letter-spacing: 0.5px; /* Espaçamento sutil para mais elegância */
+}
+
+.video-container {
+  border: 1px solid #333;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 2.5rem; /* Aumentei um pouco o espaço */
+}
+
+#video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#video-info h3 {
+  font-size: 2rem; /* ESTILO ALTERADO - Título maior e mais pesado */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800; /* Mais forte */
+  color: #fff; /* Branco puro para máximo contraste */
+  margin-bottom: 0.8rem;
+}
+
+#video-info p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.8rem; /* Mais espaço antes do botão */
+  line-height: 1.6;
+  max-width: 550px; /* Texto um pouco mais contido */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#video-info a {
+  color: #f7931e;
+  border: 1px solid #f7931e;
+  padding: 0.7rem 1.8rem; /* Botão um pouco maior */
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 600; /* Texto do botão mais forte */
+}
+
+#video-info a:hover {
+  background-color: #f7931e;
+  color: #1a1a1a;
+}
+
 /* Navbar */
 .navbar{
   position:fixed; top:0; width:100%;
@@ -42,7 +130,7 @@ body {
 /* ===== HERO (apenas imagem) ===== */
 .hero {
   position: relative;
-  min-height: 88vh; /* altura de vitrine */
+  min-height: 70vh; /* altura de vitrine */
   width: 100%;
   overflow: hidden;
   isolation: isolate; /* para overlays futuros se quiser */
@@ -62,18 +150,7 @@ body {
   object-position: center;
 }
 
-/* overlay sutil (se quiser mais leitura quando houver texto no futuro) */
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.35)
-  );
-  pointer-events: none;
-}
+
 
 /* (opcional) se usar título fixo no futuro */
 .hero-content {
@@ -777,6 +854,29 @@ body {
   .pre-lancamentos .cards-pre::-webkit-scrollbar {
     display: none;
   }
+  /* ===== Responsivo da Seção de Vídeo ===== */
+#video-section {
+  padding: 4rem 1rem; /* Reduz o espaçamento vertical para mobile */
+}
+
+.titulo-secao-video {
+  font-size: 1.5rem; /* Diminui o título principal */
+  margin-bottom: 2rem;
+}
+
+#video-info h3 {
+  font-size: 1.6rem; /* Diminui o título do empreendimento */
+}
+
+#video-info p {
+  font-size: 0.95rem; /* Ajusta o texto da descrição */
+  line-height: 1.5;
+}
+
+#video-info a {
+  padding: 0.6rem 1.5rem; /* Botão ligeiramente menor */
+  font-size: 0.9rem;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {

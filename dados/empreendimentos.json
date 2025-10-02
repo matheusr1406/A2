@@ -1,32 +1,50 @@
 [
     {
-      "slug": "residencial-horizon",
-      "titulo": "Residencial Horizon",
+      "slug": "Casa Alphaville",
+      "titulo": "Casa Alphaville",
       "categoria": "Residencial",
-      "cidade": "Porto Alegre",
-      "resumo": "Alto padrão, vista privilegiada e localização nobre.",
-      "destaques": ["3 suítes", "2 vagas", "200 m²"],
-      "descricao": "A poucos minutos das principais vias, o Horizon reúne sofisticação, conforto e acabamentos de alto padrão, com plantas pensadas para a vida real.",
+      "cidade": "Gravataí",
+      "resumo": "Residência de alto padrão no Alphaville Gravataí com 300m², 4 suítes e 6 vagas. Um projeto de arquitetura moderna que integra design contemporâneo, natureza e área de lazer com piscina.",
+      "destaques": ["4 suítes", "6 vagas", "300 m²", "Piscina"],
+      "descricao": "Design contemporâneo e integração com a natureza. Esta residência no Alphaville Gravataí reúne o que há de melhor em arquitetura moderna, com ambientes amplos que privilegiam a luminosidade natural. 🌿✨\n\nCom 300m², a casa conta com 4 suítes, 6 banheiros e acabamentos de alto padrão, garantindo conforto e exclusividade em cada detalhe. Além disso, oferece garagem para até 6 vagas, área de lazer com piscina e espaços internos pensados para praticidade e bem-estar.",
       "galeria": [
-        "assets/img/casa1.jpg",
-        "assets/img/casa1.jpg",
-        "assets/img/casa1.jpg"
+        "assets/casaAlphaville/foto1.jpeg",
+        "assets/casaAlphaville/foto2.jpeg",
+        "assets/casaAlphaville/foto3.jpeg",
+        "assets/casaAlphaville/foto4.jpeg",
+        "assets/casaAlphaville/foto5.jpeg",
+        "assets/casaAlphaville/foto6.jpeg",
+        "assets/casaAlphaville/foto7.jpeg",
+        "assets/casaAlphaville/foto8.jpeg",
+        "assets/casaAlphaville/foto9.jpeg",
+        "assets/casaAlphaville/foto10.jpeg",
+        "assets/casaAlphaville/foto11.jpeg",
+        "assets/casaAlphaville/foto12.jpeg",
+        "assets/casaAlphaville/foto13.jpeg",
+        "assets/casaAlphaville/foto14.jpeg",
+        "assets/casaAlphaville/foto15.jpeg",
+        "assets/casaAlphaville/foto16.jpeg",
+        "assets/casaAlphaville/foto17.jpeg",
+        "assets/casaAlphaville/foto18.jpeg",
+        "assets/casaAlphaville/foto19.jpeg",
+        "assets/casaAlphaville/foto20.jpeg",
+        "assets/casaAlphaville/foto21.jpeg",
+        "assets/casaAlphaville/foto22.jpeg",
+        "assets/casaAlphaville/foto23.jpeg"
       ],
       "plantas": [
         { "nome": "Planta Tipo A", "arquivo": "assets/img/horizon/plantas/tipo-a.jpg" }
       ],
       "localizacao": {
-        "endereco": "Rua Exemplo, 123 — Bairro Nobre — Porto Alegre/RS",
-        "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.096009081381!2d-51.16583222439644!3d-30.00539947494324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197717488b0a39%3A0xbe85d72b62ff4f4c!2sPisotech%20Revestimentos!5e0!3m2!1spt-BR!2sbr!4v1747856788914!5m2!1spt-BR!2sbr"
+        "endereco": "Av. Alphaville, 2745 - São Vicente, Gravataí - RS",
+        "maps": "https://www.google.com/maps/place/Alphaville+Gravata%C3%AD/@-29.9141665,-51.0196241,17z/data=!3m1!4b1!4m6!3m5!1s0x95197351c6d7cc29:0x63b2d150268513e6!8m2!3d-29.9141665!4d-51.0196241!16s%2Fg%2F11bvv505sd?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
       },
       "cta": {
-        "telefone": "+55 51 99999-9999",
-        "email": "contato@a2construtora.com.br",
-        "whatsapp": "https://wa.me/5551999999999"
+        "email": "contato@a2construtora.com.br"
       },
       "seo": {
-        "title": "Residencial Horizon — A2 Incorporadora",
-        "description": "3 suítes, 2 vagas, 200 m² em localização nobre."
+        "title": "Casa Alphaville — A2 Incorporadora",
+        "description": "4 suítes, 6 vagas, 300 m²"
       }
     },
     {
