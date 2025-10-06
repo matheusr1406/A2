@@ -12,8 +12,8 @@ function toSlug(str = "") {
     .replace(/-+/g, "-");          // hífens duplos -> simples
 }
 
-// Função para carregar o arquivo JSON de forma segura
-async function carregaJSON() {
+  // Função para carregar o arquivo JSON de forma segura
+  async function carregaJSON() {
   // Usando apenas o caminho absoluto a partir da raiz do site.
   // É a forma mais garantida de funcionar no Live Server e no Netlify.
   const url = "/dados/empreendimentos.json";

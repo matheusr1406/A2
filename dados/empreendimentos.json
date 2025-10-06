@@ -1,6 +1,6 @@
 [
     {
-      "slug": "Casa Alphaville",
+      "slug": "Alphaville Gravataí",
       "titulo": "Casa Alphaville",
       "categoria": "Residencial",
       "cidade": "Gravataí",
@@ -48,30 +48,160 @@
       }
     },
     {
-      "slug": "country-tower",
-      "titulo": "Country Tower",
-      "categoria": "Corporativo",
+      "slug": "Condominio Reserva Ecoville",
+      "titulo": "Casa em condominio",
+      "categoria": "Residencial",
       "cidade": "Porto Alegre",
-      "resumo": "Torre corporativa com lajes amplas e vista panorâmica.",
-      "destaques": ["Lajes flexíveis", "Heliponto", "10 elevadores"],
-      "descricao": "Empreendimento corporativo premium com infraestrutura completa, pensado para empresas que buscam performance e imagem.",
+      "resumo": "Sofisticação e exclusividade! Um lindo projeto de 330m² no Condomínio Reserva Ecoville, pensado para quem valoriza cada detalhe. 🏠 Tudo no projeto foi pensado para oferecer o máximo de conforto, elegância e integração entre os ambientes. Um projeto que traduz o verdadeiro conceito de alto padrão. 🛋️✨",
+      "destaques": ["330 m²"],
+      "descricao": "Definida pela sofisticação e exclusividade, esta residência de 330m² no Condomínio Reserva Ecoville é a materialização do alto padrão. Cada espaço foi meticulosamente planejado para criar uma integração perfeita entre os ambientes, resultando em uma atmosfera de fluidez e amplitude. A atenção aos detalhes é evidente em cada acabamento, refletindo um compromisso com a qualidade e o design de excelência. O projeto foi desenvolvido para oferecer o máximo de conforto e elegância, com uma planta inteligente que otimiza a convivência e a privacidade. É uma casa que não apenas impressiona visualmente, mas que foi pensada para o bem-estar diário, representando uma oportunidade única para quem busca viver com requinte e qualidade de vida.",
       "galeria": [
-        "assets/img/casa1.jpg",
-        "assets/img/casa1.jpg",
-        "assets/img/casa1.jpg"
+        "assets/casa25Eco/foto1.HEIC",
+        "assets/casa25Eco/foto2.HEIC",
+        "assets/casa25Eco/foto3.HEIC",
+        "assets/casa25Eco/foto4.HEIC"
       ],
       "localizacao": {
-        "endereco": "Av. Exemplo, 456 — Bairro Central — Porto Alegre/RS",
-        "maps": "https://www.google.com/maps?q=Av%20Exemplo%20456%20Porto%20Alegre"
+        "endereco": "Av. Willy Eugênio Fleck 1495 - Rubem Berta",
+        "maps": "https://maps.google.com/?cid=1719307681901429840&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl"
       },
       "cta": {
-        "telefone": "+55 51 98888-8888",
-        "email": "comercial@a2construtora.com.br",
-        "whatsapp": "https://wa.me/5551988888888"
+        "email": "contato@a2construtora.com.br"
       },
       "seo": {
-        "title": "Country Tower — A2 Incorporadora",
-        "description": "Centro corporativo de alto padrão em Porto Alegre."
+        "title": "Casa Reserva Ecoville — A2 Incorporadora",
+        "description": "4 suítes, 3 vagas, 330 m²"
+      }
+    }, 
+    {
+      "slug": "Condominio Reserva Ecoville",
+      "titulo": "Casa em condominio",
+      "categoria": "Residencial",
+      "cidade": "Porto Alegre",
+      "resumo": "Design contemporâneo, elegância e conforto em cada detalhe. Essa residência no Condomínio Buena Vista encanta pela arquitetura imponente, integração com a natureza e ambientes planejados para proporcionar bem-estar. 🌿✨ Com espaços amplos, área de lazer com piscina e um projeto que valoriza a sofisticação, esta casa é o retrato do alto padrão em Viamão.",
+      "destaques": [ "222 m²"],
+      "descricao": "Uma verdadeira joia da arquitetura contemporânea no Condomínio Buena Vista, esta residência foi concebida para quem busca o equilíbrio perfeito entre sofisticação e natureza. Sua arquitetura imponente se destaca na paisagem, enquanto o projeto de interiores promove uma conexão fluida com o verde ao redor, com ambientes que valorizam a iluminação natural e o bem-estar em cada detalhe. Os espaços internos são amplos e inteligentemente planejados, oferecendo versatilidade para o dia a dia e momentos especiais. A área de lazer privativa, com uma piscina convidativa, é o cenário ideal para relaxar e receber amigos e família. Viver aqui é experimentar o melhor do alto padrão em Viamão, em um refúgio de elegância e tranquilidade.",
+      "galeria": [
+        "assets/casa76Eco/foto1.HEIC",
+        "assets/casa76Eco/foto2.HEIC",
+        "assets/casa76Eco/foto3.HEIC"
+      ],
+      "localizacao": {
+        "endereco": "Av. Willy Eugênio Fleck 1495 - Rubem Berta",
+        "maps": "https://maps.google.com/?cid=1719307681901429840&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl"
+      },
+      "cta": {
+        "email": "contato@a2construtora.com.br"
+      },
+      "seo": {
+        "title": "Casa Reserva Ecoville — A2 Incorporadora",
+        "description": "222 m²"
+      }
+    },
+    {
+      "slug": "Condominio Reserva Ecoville",
+      "titulo": "Casa em condominio",
+      "categoria": "Residencial",
+      "cidade": "Porto Alegre",
+      "resumo": "Design contemporâneo, elegância e conforto em cada detalhe. Essa residência no Condomínio Buena Vista encanta pela arquitetura imponente, integração com a natureza e ambientes planejados para proporcionar bem-estar. 🌿✨ Com espaços amplos, área de lazer com piscina e um projeto que valoriza a sofisticação, esta casa é o retrato do alto padrão em Viamão.",
+      "destaques": [ "227 m²"],
+      "descricao": "Uma verdadeira joia da arquitetura contemporânea no Condomínio Buena Vista, esta residência foi concebida para quem busca o equilíbrio perfeito entre sofisticação e natureza. Sua arquitetura imponente se destaca na paisagem, enquanto o projeto de interiores promove uma conexão fluida com o verde ao redor, com ambientes que valorizam a iluminação natural e o bem-estar em cada detalhe. Os espaços internos são amplos e inteligentemente planejados, oferecendo versatilidade para o dia a dia e momentos especiais. A área de lazer privativa, com uma piscina convidativa, é o cenário ideal para relaxar e receber amigos e família. Viver aqui é experimentar o melhor do alto padrão em Viamão, em um refúgio de elegância e tranquilidade.",
+      "galeria": [
+        "assets/casa77Eco/foto1.HEIC",
+        "assets/casa77Eco/foto2.HEIC",
+        "assets/casa77Eco/foto3.HEIC"
+      ],
+      "localizacao": {
+        "endereco": "Av. Willy Eugênio Fleck 1495 - Rubem Berta",
+        "maps": "https://maps.google.com/?cid=1719307681901429840&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl"
+      },
+      "cta": {
+        "email": "contato@a2construtora.com.br"
+      },
+      "seo": {
+        "title": "Casa Reserva Ecoville — A2 Incorporadora",
+        "description": "227 m²"
+      }
+    },
+    {
+      "slug": "Condominio Reserva Ecoville",
+      "titulo": "Casa em condominio",
+      "categoria": "Residencial",
+      "cidade": "Porto Alegre",
+      "resumo": "Design contemporâneo, elegância e conforto em cada detalhe. Essa residência no Condomínio Buena Vista encanta pela arquitetura imponente, integração com a natureza e ambientes planejados para proporcionar bem-estar. 🌿✨ Com espaços amplos, área de lazer com piscina e um projeto que valoriza a sofisticação, esta casa é o retrato do alto padrão em Viamão.",
+      "destaques": [ "228 m²"],
+      "descricao": "Uma verdadeira joia da arquitetura contemporânea no Condomínio Buena Vista, esta residência foi concebida para quem busca o equilíbrio perfeito entre sofisticação e natureza. Sua arquitetura imponente se destaca na paisagem, enquanto o projeto de interiores promove uma conexão fluida com o verde ao redor, com ambientes que valorizam a iluminação natural e o bem-estar em cada detalhe. Os espaços internos são amplos e inteligentemente planejados, oferecendo versatilidade para o dia a dia e momentos especiais. A área de lazer privativa, com uma piscina convidativa, é o cenário ideal para relaxar e receber amigos e família. Viver aqui é experimentar o melhor do alto padrão em Viamão, em um refúgio de elegância e tranquilidade.",
+      "galeria": [
+        "assets/casa47Eco/foto1.HEIC",
+        "assets/casa47Eco/foto2.HEIC",
+        "assets/casa47Eco/foto3.HEIC"
+      ],
+      "localizacao": {
+        "endereco": "Av. Willy Eugênio Fleck 1495 - Rubem Berta",
+        "maps": "https://maps.google.com/?cid=1719307681901429840&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl"
+      },
+      "cta": {
+        "email": "contato@a2construtora.com.br"
+      },
+      "seo": {
+        "title": "Casa Reserva Ecoville — A2 Incorporadora",
+        "description": "228 m²"
+      }
+    },
+    {
+      "slug": "Condominio Reserva Ecoville",
+      "titulo": "Casa em condominio",
+      "categoria": "Residencial",
+      "cidade": "Porto Alegre",
+      "resumo": "Design contemporâneo, elegância e conforto em cada detalhe. Essa residência no Condomínio Buena Vista encanta pela arquitetura imponente, integração com a natureza e ambientes planejados para proporcionar bem-estar. 🌿✨ Com espaços amplos, área de lazer com piscina e um projeto que valoriza a sofisticação, esta casa é o retrato do alto padrão em Viamão.",
+      "destaques": [ "380 m²"],
+      "descricao": "Uma verdadeira joia da arquitetura contemporânea no Condomínio Buena Vista, esta residência foi concebida para quem busca o equilíbrio perfeito entre sofisticação e natureza. Sua arquitetura imponente se destaca na paisagem, enquanto o projeto de interiores promove uma conexão fluida com o verde ao redor, com ambientes que valorizam a iluminação natural e o bem-estar em cada detalhe. Os espaços internos são amplos e inteligentemente planejados, oferecendo versatilidade para o dia a dia e momentos especiais. A área de lazer privativa, com uma piscina convidativa, é o cenário ideal para relaxar e receber amigos e família. Viver aqui é experimentar o melhor do alto padrão em Viamão, em um refúgio de elegância e tranquilidade.",
+      "galeria": [
+        "assets/casa48Eco/foto1.HEIC",
+        "assets/casa48Eco/foto2.HEIC",
+        "assets/casa48Eco/foto3.HEIC"
+      ],
+      "localizacao": {
+        "endereco": "Av. Willy Eugênio Fleck 1495 - Rubem Berta",
+        "maps": "https://maps.google.com/?cid=1719307681901429840&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl"
+      },
+      "cta": {
+        "email": "contato@a2construtora.com.br"
+      },
+      "seo": {
+        "title": "Casa Reserva Ecoville — A2 Incorporadora",
+        "description": "380 m²"
+      }
+    },
+    {
+      "slug": "Condominio Buena Vista",
+      "titulo": "Casa em condominio",
+      "categoria": "Residencial",
+      "cidade": "Viamão",
+      "resumo": "Design contemporâneo, elegância e conforto em cada detalhe. Essa residência no Condomínio Buena Vista encanta pela arquitetura imponente, integração com a natureza e ambientes planejados para proporcionar bem-estar. 🌿✨ Com espaços amplos, área de lazer com piscina e um projeto que valoriza a sofisticação, esta casa é o retrato do alto padrão em Viamão.",
+      "destaques": ["4 suítes", "6 vagas", "300 m²", "Piscina"],
+      "descricao": "Uma verdadeira joia da arquitetura contemporânea no Condomínio Buena Vista, esta residência foi concebida para quem busca o equilíbrio perfeito entre sofisticação e natureza. Sua arquitetura imponente se destaca na paisagem, enquanto o projeto de interiores promove uma conexão fluida com o verde ao redor, com ambientes que valorizam a iluminação natural e o bem-estar em cada detalhe. Os espaços internos são amplos e inteligentemente planejados, oferecendo versatilidade para o dia a dia e momentos especiais. A área de lazer privativa, com uma piscina convidativa, é o cenário ideal para relaxar e receber amigos e família. Viver aqui é experimentar o melhor do alto padrão em Viamão, em um refúgio de elegância e tranquilidade.",
+      "galeria": [
+        "assets/casaViamao/foto1.png",
+        "assets/casaViamao/foto2.png",
+        "assets/casaViamao/foto3.png",
+        "assets/casaViamao/foto4.png",
+        "assets/casaViamao/foto5.png",
+        "assets/casaViamao/foto6.png",
+        "assets/casaViamao/foto7.png",
+        "assets/casaViamao/foto8.png"
+      ],
+      "localizacao": {
+        "endereco": "R. Tesourinha - São Lucas, Viamão - RS",
+        "maps": "https://maps.google.com/?cid=6570391404803345069&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"
+      },
+      "cta": {
+        "email": "contato@a2construtora.com.br"
+      },
+      "seo": {
+        "title": "Casa Buena Vista — A2 Incorporadora",
+        "description": "4 suítes, 6 vagas, 300 m²"
       }
     }
+
   ]
