@@ -724,28 +724,16 @@ body {
   .carrossel {
     min-height: 300px;
   }
-  .carrossel-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* ===== CORREÇÃO CARROSSEL DESTAQUES RESPONSIVO ===== */
+
+  /* Ajusta a altura do carrossel para ser automática no mobile */
+  .carrossel-secao .carrossel {
+    height: auto;
+    min-height: 550px; /* Garante uma altura mínima para o conteúdo */
   }
 
-  .nav {
-    position: static; /* não mais absolute */
-    transform: none; /* remove o translateY(-50%) */
-    font-size: 1.8rem;
-    margin-top: 0.8rem;
-  }
-
-  /* alinhar setas lado a lado */
-  .carrossel-controles-mobile {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
   .imagem-card {
-    height: 200px;
+    height: 260px;
   }
 
   .conteudo-card h2 {
@@ -756,22 +744,12 @@ body {
     padding: 1.5rem;
   }
 
-  .nav.prev,
-  .nav.next {
-    left: 0;
-    right: 0;
-    font-size: 2rem;
-  }
+ 
 
   .bloco {
     flex: 1 1 100%;
   }
-  .nav.prev,
-  .nav.next {
-    font-size: 2rem;
-    left: 0;
-    right: 0;
-  }
+  
 
   .imagem-lanc img {
     height: 220px;
