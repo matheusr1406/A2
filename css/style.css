@@ -199,7 +199,7 @@ body {
 .carrossel {
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  height: 420px;
 }
 
 .card-carrossel {
