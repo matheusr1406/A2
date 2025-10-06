@@ -102,21 +102,21 @@ document.addEventListener("DOMContentLoaded", () => {
         title: "Casa Gravatai",
         description:
           "Um oásis de tranquilidade e sofisticação no coração da cidade.",
-        link: "#",
+        link: "empreendimentos.html",
       },
       {
         src: "assets/video/video2.mp4",
         title: "Casa Ecoville",
         description:
           "Viva nas alturas com uma vista panorâmica e design arrojado.",
-        link: "#",
+        link: "empreendimentos.html",
       },
       {
         src: "assets/video/video3.mp4",
         title: "Casa Alphaville",
         description:
           "Conforto, segurança e lazer completo para toda a família.",
-        link: "#",
+        link: "empreendimentos.html",
       },
     ];
     let currentVideoIndex = 0;
