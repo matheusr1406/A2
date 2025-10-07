@@ -10,6 +10,15 @@
   min-height: calc(100vh - 100px);
   position: relative;
 }
+.logo-area-link {
+  text-decoration: none;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none; /* <-- ADICIONE ESTA LINHA */
+}
 
 .contato-container {
   background: #1f1f1f;

@@ -11,6 +11,15 @@ body {
   background: #232323;
   color: #e5e5ea;
 }
+.logo-area-link {
+  text-decoration: none;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none; /* <-- ADICIONE ESTA LINHA */
+}
 
 /* =========================
    Navbar (Consistente com a Home)

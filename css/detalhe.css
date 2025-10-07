@@ -10,6 +10,16 @@
   place-items: center;
   overflow: hidden;
 }
+
+.logo-area-link {
+  text-decoration: none;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none; /* <-- ADICIONE ESTA LINHA */
+} 
 .det-hero__bg {
   position: absolute;
   inset: 0;
