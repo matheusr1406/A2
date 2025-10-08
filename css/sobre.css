@@ -8,8 +8,9 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: #232323;
+  background-color: #1a1a1a;
   color: #e5e5ea;
+  overflow-x: hidden;
 }
 .logo-area-link {
   text-decoration: none;

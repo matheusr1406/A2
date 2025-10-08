@@ -2,6 +2,11 @@
 /* DETALHE DO EMPREENDIMENTO          */
 /* ================================== */
 
+body {
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+}
+
 /* --- Hero --- */
 .det-hero {
   position: relative;

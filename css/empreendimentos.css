@@ -15,6 +15,7 @@ body {
   color: #e5e5ea;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 .logo-area-link {
