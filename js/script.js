@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const videoData = [
       {
         src: "assets/video/video1.mp4",
-        title: "Casa Gravatai",
+        title: "Casa Gravataí",
         description:
           "Um oásis de tranquilidade e sofisticação no coração da cidade.",
         link: "empreendimentos.html",
